@@ -23,13 +23,13 @@ let distanceEuclid (v1: float[]) (v2: float[]) =
     Array.fold2 (fun s e1 e2 -> s+Math.Pow((e1-e2), 2.0)) 0.0 v1 v2
     |> sqrt
 
-let classify point data labels k =
-    Array.zip data labels
+let classify point data k =
+    data
     |> Array.map (fun (v,l) -> distanceEuclid v point,l)
     |> Array.sortBy fst
     |> Array.take k
     |> Array.countBy snd
-    |> Array.sortByDescending fst
+    |> Array.sortByDescending snd
     |> Array.map fst
     |> Array.head
 

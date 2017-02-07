@@ -33,7 +33,7 @@ let classify point data labels k =
     |> Array.map fst
     |> Array.head
 
-let loadData filename =
+let loadTrainData filename =
     let content = File.ReadAllLines(filename)
     
     let converted = content
@@ -44,3 +44,12 @@ let loadData filename =
                                             |> Array.map (fun s -> s |> Convert.ToDouble))
 
     converted |> Array.map snd, converted |> Array.map fst
+
+let loadTestData filename = 
+    let content = File.ReadAllLines(filename)
+    
+    content
+    |> Array.skip 1
+    |> Array.map (fun l -> l.Split([|','|])
+                        |> Array.map (fun s -> s |> Convert.ToDouble)
+                )

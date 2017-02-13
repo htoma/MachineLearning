@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "KNearestNeighbor", "KNearestNeighbor\KNearestNeighbor.fsproj", "{FAA9B3C3-58DF-46C9-80FA-AA8762560623}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DecisionTree", "DecisionTree\DecisionTree.fsproj", "{6C40DA49-A602-4C61-B3D0-BE9D7F64ED84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FAA9B3C3-58DF-46C9-80FA-AA8762560623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA9B3C3-58DF-46C9-80FA-AA8762560623}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA9B3C3-58DF-46C9-80FA-AA8762560623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C40DA49-A602-4C61-B3D0-BE9D7F64ED84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C40DA49-A602-4C61-B3D0-BE9D7F64ED84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C40DA49-A602-4C61-B3D0-BE9D7F64ED84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C40DA49-A602-4C61-B3D0-BE9D7F64ED84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
